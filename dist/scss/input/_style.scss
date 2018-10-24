@@ -1,0 +1,53 @@
+.ad-input {
+    &.outline {
+        input {
+            border: 1px solid rgba($dark, 0.1);
+            margin-left: -1px;
+            // margin-top:-1px;
+            background-color: rgba($dark, 0.01);
+        }
+    }
+
+    //Dynamically(JavaScript) add this class to
+    //.ad-input to indicate error. i.e .ad-input.ad-error
+    &.ad-error {
+        &>label {
+            font-weight: bold;
+            color: $red;
+        }
+
+        input {
+            border-color: $red !important;
+            color: $red;
+        }
+    }
+
+    //Dynamically(JavaScript) add this class to
+    //.ad-input to indicate success. i.e .ad-input.ad-sucess
+    &.ad-success {
+        &>label {
+            font-weight: bold;
+            color: $tGreen;
+        }
+
+        input {
+            border-color: $tGreen !important;
+            color: $tGreen;
+        }
+    }
+
+    // &:before{
+    //     position: absolute;
+    //     display: block;
+    //     left:0;
+    //     right:0;
+    //     bottom:0;
+    //     z-index: 1000;
+    //     margin:0;
+    //     padding:0;
+    //     width:100%;
+    //     height: 2px;
+    //     content:' ';
+    //     background-color: rgba($dark, .3);
+    // }
+}

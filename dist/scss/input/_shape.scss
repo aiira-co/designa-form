@@ -1,0 +1,81 @@
+.ad-input {
+    &.ad-block {
+        input {
+            border-radius: 0;
+        }
+    }
+
+    &.ad-round {
+        label {
+            padding-left: 16px;
+        }
+
+        input {
+            border-radius: 16.5px;
+            padding: 0 2%;
+            width: 96%;
+        }
+
+        // Correct border-radius for input
+        &.outline {
+            input {
+                border-radius: 18px;
+            }
+        }
+
+        select {
+            width: 100%;
+        }
+
+        textarea {
+            padding-top: 8px;
+        }
+    }
+
+    //Floating
+    &.ad-float {
+        position: relative;
+
+        u {
+            display: block;
+            margin: auto 16px;
+            border-width: 1.5px;
+            opacity: 0.5;
+            position: relative;
+            background-color: $baseFontColor;
+            height: 1px;
+        }
+
+        input {
+            margin: 30px 16px 8px 16px;
+            z-index: 10 !important;
+            z-index: 10;
+
+            &+label {
+                font-size: inherit;
+                opacity: 0.6;
+                position: absolute;
+                top: 22px;
+                z-index: 100;
+                @include transEase(0.2s);
+                pointer-events: none;
+            }
+
+            &:focus {
+                &+label {
+                    color: darken($prim, 20);
+                    font-size: 12px;
+                    font-weight: normal;
+                    opacity: 1;
+                    top: 0;
+                }
+            }
+
+            &:value {
+                &+label {
+                    top: 0;
+                }
+            }
+        }
+    }
+}

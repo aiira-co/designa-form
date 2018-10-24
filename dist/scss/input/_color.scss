@@ -1,0 +1,46 @@
+form.ad-form,
+.ad-input {
+    &.input-pink {
+        @include inputLineColor($pink);
+    }
+
+    &.input-prim {
+        @include inputLineColor($prim);
+    }
+
+    &.input-tgreen {
+        @include inputLineColor($tGreen);
+    }
+
+    &.input-yellow {
+        @include inputLineColor($yellow);
+    }
+
+    &.input-blue {
+        @include inputLineColor($blue);
+    }
+
+    &.input-red {
+        @include inputLineColor($red);
+    }
+
+    &.input-green {
+        @include inputLineColor($green);
+    }
+
+    &.input-purple {
+        @include inputLineColor(purple);
+    }
+
+    &.input-white {
+        @include inputLineColor(white);
+    }
+
+    &.input-dark {
+        @include inputLineColor($dark);
+    }
+
+    &.input-clear {
+        @include inputLineColor(transparent);
+    }
+}

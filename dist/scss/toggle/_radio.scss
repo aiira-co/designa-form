@@ -1,0 +1,87 @@
+//Radio Button
+[type='radio']:not(:checked)+.ad-radio,
+[type='radio']:checked+.ad-radio {
+    position: relative; //padding-left: 24px;
+    cursor: pointer;
+    margin: 16px;
+}
+
+/* radio aspect */
+[type='radio']:not(:checked)+.ad-radio:before,
+[type='radio']:checked+.ad-radio:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    background: #f8f8f8; // border-radius: 1px;
+    // box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+
+/* checked mark aspect */
+[type='radio']:not(:checked)+.ad-radio:after,
+[type='radio']:checked+.ad-radio:after {
+    font-family: FontAwesome;
+    content: '\f111';
+    padding-top: 1px; // transform:scale(0.3);
+    display: inline-block;
+    margin-top: 3.3px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 3.35px;
+    left: 2px;
+    display: block;
+    width: 17px;
+    height: 17px; // font-size: 18px;
+    line-height: 0.8;
+    color: darken($prim, 10); // background-color:$prim - 50;
+    transition: all 0.2s;
+}
+
+/* checked mark aspect changes */
+[type='radio']:not(:checked)+.ad-radio:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type='radio']:checked+.ad-radio:before {
+    border-color: darken($prim, 10) !important; // opacity: 0;
+}
+
+[type='radio']:checked+.ad-radio:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* disabled radio */
+[type='radio']:disabled:not(:checked)+.ad-radio:before,
+[type='radio']:disabled:checked+.ad-radio:before {
+    box-shadow: none;
+    border-color: darken($prim, 10);
+    background-color: darken($prim, 10);
+    pointer-events: none;
+}
+
+[type='radio']:disabled:checked+.ad-radio:after {
+    color: white; // background-color:$prim;
+}
+
+[type='radio']:disabled+.ad-radio {
+    color: #aaa;
+}
+
+/* accessibility */
+[type='radio']:checked:focus+.ad-radio:before,
+[type='radio']:not(:checked):focus+.ad-radio:before {
+    border-color: darken($prim, 10);
+}
+
+/* hover style just for information */
+.ad-radio:hover:before {
+    border-color: darken($prim, 10) !important;
+}

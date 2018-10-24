@@ -1,0 +1,296 @@
+label {
+    &.output {
+        font-size: $baseFontSize + 2;
+        font-weight: 100;
+    }
+}
+
+.ad-input {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative; // background-color:grey;
+
+    small {
+        display: block;
+        margin: 0 16px;
+        padding: 0;
+        color: inherit;
+    }
+
+    //SPAN ICON
+    span {
+        display: block;
+        position: absolute; // float: left;
+        height: 34px; // top:0;
+        // margin-right: 8px;
+        opacity: 0.8;
+        padding-left: 8px; // width: 34px;
+        // padding-left:;
+        // background-color:red;
+        // text-align: center;
+        line-height: 40px;
+        z-index: 100;
+
+        i {
+            // background-color:red;
+            width: 16px;
+            height: 16px;
+            font-size: 14px;
+            text-align: center;
+            margin: 9px;
+            padding: 0;
+        }
+
+        &+input {
+            // width: 90%;
+            // margin-left: 0;
+            // padding-right: 0;
+            text-indent: 40px;
+        }
+    }
+
+    input {
+        /*input, textarea, keygen, select, button {*/
+        position: relative;
+        text-rendering: auto;
+        color: inherit;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0;
+        text-shadow: none;
+        display: block !important;
+        text-align: start;
+        text-indent: 10px;
+        margin: 0em 0em 0em 0em;
+        /*font-size: 13.3333px;*/
+        width: 97.6%;
+        line-height: 2.4em;
+        padding: 0 1.2%;
+        border: none;
+        border-radius: 3px;
+        outline: none; // box-shadow: inset 0 0 2px 0 grey;
+        // @include shadow-inset(0, 0, 2px, 0, grey);
+        border-bottom: 2px solid transparent;
+        @include transEase(0.3s);
+        background-color: rgba($dark, 0.05);
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+        &:focus {
+            border-color: $prim;
+
+            &+.ad-iput>label {
+                color: $prim !important;
+            }
+        }
+
+        // &:focus{
+        //   // box-shadow: inset 0 0 3px 0 $prim;
+        //   // @include shadow-inset(0, 0, 3px, 0, $prim);
+        //   // background-color: rgba(white,.5);
+        //   // color:$dark;
+        //   border-bottom: 2px solid $pink;
+        //   //We want to make icons more visbile when focused, and dimm when out of focus
+        //   & + .ad-input.ad-icon  span {
+        //     opacity: .1;
+        //   }
+        // }
+        // for icons
+        &+span {
+            right: -7px;
+            top: 30px;
+
+            i {}
+
+            // background-color: red;
+        }
+
+        &[type='search'] {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        &[type='radio'],
+        &[type='checkbox'] {
+            // margin: 4px 0 0;
+            // margin-top: 1px \9;
+            // line-height: normal;
+            display: none;
+        }
+
+        &[type='file'] {
+            display: block;
+        }
+
+        &[type='range'] {
+            display: block;
+            width: 100%;
+            padding: 0;
+            box-shadow: none;
+            border: none;
+            background-color: transparent;
+        }
+
+        &[type='file']:focus,
+        &[type='radio']:focus,
+        &[type='checkbox']:focus {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+        }
+
+        &+.rFloat {
+            opacity: 0.5;
+        }
+    }
+
+    select {
+        @extend input; // background-color: transparent;
+        padding-top: 0.465em !important;
+        padding-bottom: 0.465em !important;
+        width: 100%;
+
+        &[multiple],
+        &[size] {
+            height: auto;
+        }
+    }
+
+    textarea {
+        @extend input;
+        line-height: 1.4em;
+        padding-top: 8px;
+        min-height: 100px;
+    }
+
+    @keyframes blinkBG {
+        0% {
+            background: linear-gradient(90deg, rgba($prim, 0.2), transparent);
+        }
+
+        50% {
+            background: rgba($prim, 0.2);
+        }
+
+        100% {
+            background: linear-gradient(90deg, transparent, rgba($prim, 0.2));
+        }
+    }
+
+    //Label
+    label {
+        display: inline-block;
+        padding: 12px 16px 0 0;
+    }
+
+    &.ad-label {
+        label {
+            display: block;
+            font-size: 12px;
+        }
+    }
+
+    // Icons
+    &.ad-icon {
+        i {
+            display: inline-block;
+            vertical-align: top;
+            color: inherit;
+            opacity: 0.8;
+            width: 20px; // background-color:red;
+            // background-color:green;
+            // position:absolute;
+        }
+    }
+
+    &.ad-button {
+        .ad-btn {
+            position: absolute;
+            right: 4px;
+            margin: 0; // opacity: 0.56;
+            // padding-right: 0;
+            top: 2px;
+        }
+
+        &.ad-label {
+            .ad-btn {
+                top: 30px;
+            }
+        }
+    }
+}
+
+//Range
+input[type='range'] {
+    -webkit-appearance: none;
+    margin: 16px 0;
+    margin-bottom: 18px; // width: 100%;
+}
+
+input[type='range']:focus {
+    outline: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    @include rangeTrack();
+
+    &:focus {
+        background-color: $tGreen;
+    }
+}
+
+input[type='range']::-webkit-slider-thumb {
+    @include rangeThumb();
+}
+
+input[type='range']::-webkit-slider-thumb:focus {
+    background: $tGreen;
+    border-color: $tGreen;
+}
+
+input[type='range']::-moz-range-track {
+    @include rangeTrack();
+}
+
+input[type='range']::-moz-range-thumb {
+    @include rangeThumb();
+
+    &:focus {
+        background: $tGreen;
+        border-color: $tGreen;
+        @include scale(1);
+    }
+}
+
+input[type='range']::-ms-track {
+    @include rangeTrack();
+    background: transparent;
+    border-color: transparent;
+    border-width: 1px 0;
+    color: transparent;
+}
+
+input[type='range']::-ms-fill-lower {
+    background: lighten(grey, 10);
+}
+
+input[type='range']::-ms-fill-upper {
+    background: lighten(grey, 15);
+}
+
+input[type='range']::-ms-thumb {
+    @include rangeThumb();
+}
+
+input[type='range']:focus::-ms-fill-lower {
+    background: lighten(grey, 10);
+}
+
+input[type='range']:focus::-ms-fill-upper {
+    background: lighten(grey, 20);
+}
