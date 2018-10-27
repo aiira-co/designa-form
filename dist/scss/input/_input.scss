@@ -11,6 +11,10 @@ label {
     padding: 0;
     position: relative; // background-color:grey;
 
+    &:after {
+        background-color: $prim;
+    }
+
     small {
         display: block;
         margin: 0 16px;

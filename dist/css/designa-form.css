@@ -16,6 +16,8 @@ label.output {
   margin: 0;
   padding: 0;
   position: relative; }
+  .ad-input:after {
+    background-color: #28d0ea; }
   .ad-input small {
     display: block;
     margin: 0 16px;
@@ -344,6 +346,9 @@ form.ad-form.input-pink textarea:focus,
 .ad-input.input-pink select:focus,
 .ad-input.input-pink textarea:focus {
   border-color: #ff0066; }
+form.ad-form.input-pink:after,
+.ad-input.input-pink:after {
+  background-color: #ff0066; }
 form.ad-form.input-prim input:focus, form.ad-form.input-prim .ad-input select:focus, .ad-input form.ad-form.input-prim select:focus, form.ad-form.input-prim .ad-input textarea:focus, .ad-input form.ad-form.input-prim textarea:focus,
 form.ad-form.input-prim select:focus,
 form.ad-form.input-prim textarea:focus,
@@ -353,6 +358,9 @@ form.ad-form.input-prim textarea:focus,
 .ad-input.input-prim select:focus,
 .ad-input.input-prim textarea:focus {
   border-color: #28d0ea; }
+form.ad-form.input-prim:after,
+.ad-input.input-prim:after {
+  background-color: #28d0ea; }
 form.ad-form.input-tgreen input:focus, form.ad-form.input-tgreen .ad-input select:focus, .ad-input form.ad-form.input-tgreen select:focus, form.ad-form.input-tgreen .ad-input textarea:focus, .ad-input form.ad-form.input-tgreen textarea:focus,
 form.ad-form.input-tgreen select:focus,
 form.ad-form.input-tgreen textarea:focus,
@@ -362,6 +370,9 @@ form.ad-form.input-tgreen textarea:focus,
 .ad-input.input-tgreen select:focus,
 .ad-input.input-tgreen textarea:focus {
   border-color: #19e3b1; }
+form.ad-form.input-tgreen:after,
+.ad-input.input-tgreen:after {
+  background-color: #19e3b1; }
 form.ad-form.input-yellow input:focus, form.ad-form.input-yellow .ad-input select:focus, .ad-input form.ad-form.input-yellow select:focus, form.ad-form.input-yellow .ad-input textarea:focus, .ad-input form.ad-form.input-yellow textarea:focus,
 form.ad-form.input-yellow select:focus,
 form.ad-form.input-yellow textarea:focus,
@@ -371,6 +382,9 @@ form.ad-form.input-yellow textarea:focus,
 .ad-input.input-yellow select:focus,
 .ad-input.input-yellow textarea:focus {
   border-color: #fff600; }
+form.ad-form.input-yellow:after,
+.ad-input.input-yellow:after {
+  background-color: #fff600; }
 form.ad-form.input-blue input:focus, form.ad-form.input-blue .ad-input select:focus, .ad-input form.ad-form.input-blue select:focus, form.ad-form.input-blue .ad-input textarea:focus, .ad-input form.ad-form.input-blue textarea:focus,
 form.ad-form.input-blue select:focus,
 form.ad-form.input-blue textarea:focus,
@@ -380,6 +394,9 @@ form.ad-form.input-blue textarea:focus,
 .ad-input.input-blue select:focus,
 .ad-input.input-blue textarea:focus {
   border-color: #2196f3; }
+form.ad-form.input-blue:after,
+.ad-input.input-blue:after {
+  background-color: #2196f3; }
 form.ad-form.input-red input:focus, form.ad-form.input-red .ad-input select:focus, .ad-input form.ad-form.input-red select:focus, form.ad-form.input-red .ad-input textarea:focus, .ad-input form.ad-form.input-red textarea:focus,
 form.ad-form.input-red select:focus,
 form.ad-form.input-red textarea:focus,
@@ -389,6 +406,9 @@ form.ad-form.input-red textarea:focus,
 .ad-input.input-red select:focus,
 .ad-input.input-red textarea:focus {
   border-color: #f44336; }
+form.ad-form.input-red:after,
+.ad-input.input-red:after {
+  background-color: #f44336; }
 form.ad-form.input-green input:focus, form.ad-form.input-green .ad-input select:focus, .ad-input form.ad-form.input-green select:focus, form.ad-form.input-green .ad-input textarea:focus, .ad-input form.ad-form.input-green textarea:focus,
 form.ad-form.input-green select:focus,
 form.ad-form.input-green textarea:focus,
@@ -398,6 +418,9 @@ form.ad-form.input-green textarea:focus,
 .ad-input.input-green select:focus,
 .ad-input.input-green textarea:focus {
   border-color: #5fcf80; }
+form.ad-form.input-green:after,
+.ad-input.input-green:after {
+  background-color: #5fcf80; }
 form.ad-form.input-purple input:focus, form.ad-form.input-purple .ad-input select:focus, .ad-input form.ad-form.input-purple select:focus, form.ad-form.input-purple .ad-input textarea:focus, .ad-input form.ad-form.input-purple textarea:focus,
 form.ad-form.input-purple select:focus,
 form.ad-form.input-purple textarea:focus,
@@ -407,6 +430,9 @@ form.ad-form.input-purple textarea:focus,
 .ad-input.input-purple select:focus,
 .ad-input.input-purple textarea:focus {
   border-color: purple; }
+form.ad-form.input-purple:after,
+.ad-input.input-purple:after {
+  background-color: purple; }
 form.ad-form.input-white input:focus, form.ad-form.input-white .ad-input select:focus, .ad-input form.ad-form.input-white select:focus, form.ad-form.input-white .ad-input textarea:focus, .ad-input form.ad-form.input-white textarea:focus,
 form.ad-form.input-white select:focus,
 form.ad-form.input-white textarea:focus,
@@ -416,6 +442,9 @@ form.ad-form.input-white textarea:focus,
 .ad-input.input-white select:focus,
 .ad-input.input-white textarea:focus {
   border-color: white; }
+form.ad-form.input-white:after,
+.ad-input.input-white:after {
+  background-color: white; }
 form.ad-form.input-dark input:focus, form.ad-form.input-dark .ad-input select:focus, .ad-input form.ad-form.input-dark select:focus, form.ad-form.input-dark .ad-input textarea:focus, .ad-input form.ad-form.input-dark textarea:focus,
 form.ad-form.input-dark select:focus,
 form.ad-form.input-dark textarea:focus,
@@ -425,6 +454,9 @@ form.ad-form.input-dark textarea:focus,
 .ad-input.input-dark select:focus,
 .ad-input.input-dark textarea:focus {
   border-color: #222c37; }
+form.ad-form.input-dark:after,
+.ad-input.input-dark:after {
+  background-color: #222c37; }
 form.ad-form.input-clear input:focus, form.ad-form.input-clear .ad-input select:focus, .ad-input form.ad-form.input-clear select:focus, form.ad-form.input-clear .ad-input textarea:focus, .ad-input form.ad-form.input-clear textarea:focus,
 form.ad-form.input-clear select:focus,
 form.ad-form.input-clear textarea:focus,
@@ -434,6 +466,9 @@ form.ad-form.input-clear textarea:focus,
 .ad-input.input-clear select:focus,
 .ad-input.input-clear textarea:focus {
   border-color: transparent; }
+form.ad-form.input-clear:after,
+.ad-input.input-clear:after {
+  background-color: transparent; }
 
 output {
   display: block;
