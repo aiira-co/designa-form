@@ -470,6 +470,23 @@ form.ad-form.input-clear:after,
 .ad-input.input-clear:after {
   background-color: transparent; }
 
+.bg-dark .ad-input input, .bg-dark .ad-input select, .bg-dark .ad-input textarea {
+  background-color: rgba(0, 0, 0, 0.2); }
+.bg-dark .ad-input.outline input, .bg-dark .ad-input.outline select, .bg-dark .ad-input.outline textarea {
+  border-color: rgba(255, 255, 255, 0.05); }
+.bg-dark .ad-input select option {
+  color: white;
+  background-color: #222c37; }
+  .bg-dark .ad-input select option[selected] {
+    color: black;
+    background-color: #28d0ea; }
+.bg-dark .ad-toggle {
+  background-color: rgba(0, 0, 0, 0.2); }
+.bg-dark .ad-checkbox {
+  background-color: rgba(0, 0, 0, 0.2); }
+.bg-dark .ad-radio {
+  background-color: rgba(0, 0, 0, 0.2); }
+
 output {
   display: block;
   padding-top: 7px;
@@ -570,7 +587,7 @@ input[type='checkbox']:disabled ~ .ad-toggle, .ad-input select[type='checkbox']:
   height: 17px;
   border: 2px solid #aaa;
   border-radius: 2px;
-  background: #f8f8f8; }
+  background-color: rgba(0, 0, 0, 0.05); }
 
 /* checked mark aspect */
 [type='checkbox']:not(:checked) + .ad-checkbox:after,
@@ -643,7 +660,7 @@ input[type='checkbox']:disabled ~ .ad-toggle, .ad-input select[type='checkbox']:
   height: 17px;
   border: 2px solid #aaa;
   border-radius: 50%;
-  background: #f8f8f8; }
+  background-color: rgba(0, 0, 0, 0.05); }
 
 /* checked mark aspect */
 [type='radio']:not(:checked) + .ad-radio:after,

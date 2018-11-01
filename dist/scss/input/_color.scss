@@ -44,3 +44,41 @@ form.ad-form,
         @include inputLineColor(transparent);
     }
 }
+
+.bg-dark {
+    .ad-input {
+        input {
+            background-color: rgba(black, 0.2);
+        }
+
+        &.outline {
+            input {
+                border-color: rgba(white, 0.05);
+            }
+        }
+
+        select {
+            option {
+                color: white;
+                background-color: $dark;
+
+                &[selected] {
+                    color: black;
+                    background-color: $prim;
+                }
+            }
+        }
+    }
+
+    .ad-toggle {
+        background-color: rgba(black, 0.2);
+    }
+
+    .ad-checkbox {
+        background-color: rgba(black, 0.2);
+    }
+
+    .ad-radio {
+        background-color: rgba(black, 0.2);
+    }
+}
