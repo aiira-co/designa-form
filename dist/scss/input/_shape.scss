@@ -1,4 +1,4 @@
-.ad-input {
+.ad-input, .ad-input-group {
     &.ad-block {
         input {
             border-radius: 0;
@@ -13,7 +13,7 @@
         input {
             border-radius: 16.5px;
             padding: 0 2%;
-            width: 96%;
+            // width: 96%;
         }
 
         // Correct border-radius for input
@@ -29,6 +29,12 @@
 
         textarea {
             padding-top: 8px;
+        }
+    }
+
+    &.ad-round {
+        label {
+            padding-left: 16px;
         }
     }
 

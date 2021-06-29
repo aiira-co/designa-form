@@ -45,10 +45,10 @@ form.ad-form,
     }
 }
 
-.bg-dark {
+.bg-dark, .bg-darker {
     .ad-input {
-        input {
-            background-color: rgba(black, 0.2);
+        input, textarea {
+            background-color: rgba(black, 0.5);
         }
 
         &.outline {
