@@ -1,5 +1,5 @@
-form.ad-form,
-.ad-input {
+form.#{$classPrefix}-form,
+.#{$classPrefix}-input {
     &.input-pink {
         @include inputLineColor($pink);
     }
@@ -46,7 +46,7 @@ form.ad-form,
 }
 
 .bg-dark, .bg-darker {
-    .ad-input {
+    .#{$classPrefix}-input {
         input, textarea {
             background-color: rgba(black, 0.5);
         }
@@ -70,15 +70,15 @@ form.ad-form,
         }
     }
 
-    .ad-toggle {
+    .#{$classPrefix}-toggle {
         background-color: rgba(black, 0.2);
     }
 
-    .ad-checkbox {
+    .#{$classPrefix}-checkbox {
         background-color: rgba(black, 0.2);
     }
 
-    .ad-radio {
+    .#{$classPrefix}-radio {
         background-color: rgba(black, 0.2);
     }
 }

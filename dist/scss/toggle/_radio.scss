@@ -1,14 +1,14 @@
 //Radio Button
-[type='radio']:not(:checked)+.ad-radio,
-[type='radio']:checked+.ad-radio {
+[type='radio']:not(:checked)+.#{$classPrefix}-radio,
+[type='radio']:checked+.#{$classPrefix}-radio {
     position: relative; //padding-left: 24px;
     cursor: pointer;
     margin: 16px;
 }
 
 /* radio aspect */
-[type='radio']:not(:checked)+.ad-radio:before,
-[type='radio']:checked+.ad-radio:before {
+[type='radio']:not(:checked)+.#{$classPrefix}-radio:before,
+[type='radio']:checked+.#{$classPrefix}-radio:before {
     content: '';
     position: absolute;
     left: 0;
@@ -24,8 +24,8 @@
 }
 
 /* checked mark aspect */
-[type='radio']:not(:checked)+.ad-radio:after,
-[type='radio']:checked+.ad-radio:after {
+[type='radio']:not(:checked)+.#{$classPrefix}-radio:after,
+[type='radio']:checked+.#{$classPrefix}-radio:after {
     font-family: FontAwesome;
     content: '\f111';
     padding-top: 1px; // transform:scale(0.3);
@@ -46,44 +46,44 @@
 }
 
 /* checked mark aspect changes */
-[type='radio']:not(:checked)+.ad-radio:after {
+[type='radio']:not(:checked)+.#{$classPrefix}-radio:after {
     opacity: 0;
     transform: scale(0);
 }
 
-[type='radio']:checked+.ad-radio:before {
+[type='radio']:checked+.#{$classPrefix}-radio:before {
     border-color: darken($prim, 10) !important; // opacity: 0;
 }
 
-[type='radio']:checked+.ad-radio:after {
+[type='radio']:checked+.#{$classPrefix}-radio:after {
     opacity: 1;
     transform: scale(1);
 }
 
 /* disabled radio */
-[type='radio']:disabled:not(:checked)+.ad-radio:before,
-[type='radio']:disabled:checked+.ad-radio:before {
+[type='radio']:disabled:not(:checked)+.#{$classPrefix}-radio:before,
+[type='radio']:disabled:checked+.#{$classPrefix}-radio:before {
     box-shadow: none;
     border-color: darken($prim, 10);
     background-color: darken($prim, 10);
     pointer-events: none;
 }
 
-[type='radio']:disabled:checked+.ad-radio:after {
+[type='radio']:disabled:checked+.#{$classPrefix}-radio:after {
     color: white; // background-color:$prim;
 }
 
-[type='radio']:disabled+.ad-radio {
+[type='radio']:disabled+.#{$classPrefix}-radio {
     color: #aaa;
 }
 
 /* accessibility */
-[type='radio']:checked:focus+.ad-radio:before,
-[type='radio']:not(:checked):focus+.ad-radio:before {
+[type='radio']:checked:focus+.#{$classPrefix}-radio:before,
+[type='radio']:not(:checked):focus+.#{$classPrefix}-radio:before {
     border-color: darken($prim, 10);
 }
 
 /* hover style just for information */
-.ad-radio:hover:before {
+.#{$classPrefix}-radio:hover:before {
     border-color: darken($prim, 10) !important;
 }

@@ -1,6 +1,6 @@
 
 // group
-.ad-input-group {
+.#{$classPrefix}-input-group {
     display: flex;
     flex-wrap: no-wrap;
     overflow-x: auto;

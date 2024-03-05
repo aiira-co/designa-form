@@ -1,4 +1,12 @@
-.ad-input {
+.#{$classPrefix}-input {
+
+    &.#{$classPrefix}-flat{
+        input{
+            &:focus{
+                border-color:transparent;
+            }
+        }
+    }
     &.outline {
         input {
             border: 1px solid rgba($dark, 0.1);
@@ -9,8 +17,8 @@
     }
 
     //Dynamically(JavaScript) add this class to
-    //.ad-input to indicate error. i.e .ad-input.ad-error
-    &.ad-error {
+    //.#{$classPrefix}-input to indicate error. i.e .#{$classPrefix}-input.#{$classPrefix}-error
+    &.#{$classPrefix}-error {
         &>label {
             font-weight: bold;
             color: $red;
@@ -23,8 +31,8 @@
     }
 
     //Dynamically(JavaScript) add this class to
-    //.ad-input to indicate success. i.e .ad-input.ad-sucess
-    &.ad-success {
+    //.#{$classPrefix}-input to indicate success. i.e .#{$classPrefix}-input.#{$classPrefix}-sucess
+    &.#{$classPrefix}-success {
         &>label {
             font-weight: bold;
             color: $tGreen;

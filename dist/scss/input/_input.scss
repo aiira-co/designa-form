@@ -5,7 +5,7 @@ label {
     }
 }
 
-.ad-input, .ad-input-group {
+.#{$classPrefix}-input, .#{$classPrefix}-input-group {
     display: grid;
     margin: 0;
     padding: 0;
@@ -35,7 +35,7 @@ label {
         i {
             width: 16px;
             height: 16px;
-            font-size: 14px;
+            font-size: 0.875rem;
             text-align: center;
             margin: 9px;
             padding: 0;
@@ -71,17 +71,19 @@ label {
         transition: all .3s ease-out 0s;
         background-color: rgba(32, 32, 32, .05);
         font-family: inherit;
-        font-size: 14px;
-        font-weight: bold;
-        letter-spacing: 1px;
+        // font-size: 14px;
+        font-weight: 500;
+        // letter-spacing: 1px;
 
         &:focus {
             border-color: $prim;
 
-            &+.ad-iput>label {
+            &+.#{$classPrefix}-iput>label {
                 color: $prim !important;
             }
         }
+
+       
 
         // for icons
         &+span {
@@ -172,15 +174,15 @@ label {
         padding: 12px 16px 0 0;
     }
 
-    &.ad-label {
+    &.#{$classPrefix}-label {
         label {
             display: block;
-            font-size: 12px;
+            font-size: 0.75rem;
         }
     }
 
     // Icons
-    &.ad-icon {
+    &.#{$classPrefix}-icon {
         i {
             display: inline-block;
             vertical-align: top;
@@ -192,8 +194,8 @@ label {
         }
     }
 
-    &.ad-button {
-        .ad-btn {
+    &.#{$classPrefix}-button {
+        .#{$classPrefix}-btn {
             position: absolute;
             right: 4px;
             margin: 0; // opacity: 0.56;
@@ -201,12 +203,14 @@ label {
             top: 2px;
         }
 
-        &.ad-label {
-            .ad-btn {
+        &.#{$classPrefix}-label {
+            .#{$classPrefix}-btn {
                 top: 30px;
             }
         }
     }
+
+    
 }
 
 

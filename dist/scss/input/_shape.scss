@@ -1,11 +1,11 @@
-.ad-input, .ad-input-group {
-    &.ad-block {
+.#{$classPrefix}-input, .#{$classPrefix}-input-group {
+    &.#{$classPrefix}-block {
         input {
             border-radius: 0;
         }
     }
 
-    &.ad-round {
+    &.#{$classPrefix}-round {
         label {
             padding-left: 16px;
         }
@@ -32,14 +32,30 @@
         }
     }
 
-    &.ad-round {
+    &.#{$classPrefix}-round {
         label {
             padding-left: 16px;
         }
     }
 
+    &.#{$classPrefix}-ellipse{
+        input{
+            border-radius: 8px;
+        }
+    }
+
+
+    &.#{$classPrefix}-sm{
+        input{
+              font-weight: normal;
+        font-size: 0.75rem;
+        line-height: 2em;
+        }
+      
+    }
+
     //Floating
-    &.ad-float {
+    &.#{$classPrefix}-float {
         position: relative;
 
         u {
@@ -70,7 +86,7 @@
             &:focus {
                 &+label {
                     color: darken($prim, 20);
-                    font-size: 12px;
+                    font-size: 0.75rem;
                     font-weight: normal;
                     opacity: 1;
                     top: 0;
@@ -83,5 +99,16 @@
                 }
             }
         }
+    }
+}
+
+
+.#{$classPrefix}-input-group{
+    display: flex;
+
+    .#{$classPrefix}-input{
+        // &:first-child{
+        //     margin-right: ;
+        // }
     }
 }
