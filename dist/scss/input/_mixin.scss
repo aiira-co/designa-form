@@ -1,10 +1,10 @@
 //Handels the slider and ranges
 @mixin rangeTrack() {
-    height: 3px;
+    height: 0.3rem;
     cursor: pointer;
     animate: 0.2s;
     background: lighten(grey, 8);
-    border-radius: 1.3px;
+    border-radius: 1.0.3rem;
 
     &:focus {
         background: $tGreen;
@@ -13,9 +13,9 @@
 
 @mixin rangeThumb() {
     @include scale(0.8); //  @include shadow(0px, 0px, 0px, 0px, rgba(0,0,0,0));
-    border: 3px solid lighten(grey, 8);
-    height: 24px;
-    width: 24px;
+    border: 0.3rem solid lighten(grey, 8);
+    height: 2.4rem;
+    width: 2.4rem;
     border-radius: 50%;
     background: #ffffff;
     cursor: pointer;
@@ -41,7 +41,7 @@
     cursor: pointer;
     animate: 0.2s;
     background: rgba(black, 0.5);
-    border-radius: 5px;
+    border-radius: 0.5rem;
     border: none;
     overflow: hidden;
 
@@ -54,8 +54,8 @@
     // @include shadow(0px, 0px, 0px, 0px, rgba(0,0,0,0));
     border: none;
     height: 10px;
-    width: 30px;
-    border-radius: 5px;
+    width: 3.0rem;
+    border-radius: 0.5rem;
     background: #ffffff;
     cursor: pointer;
     -webkit-appearance: none;

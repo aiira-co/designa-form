@@ -8,7 +8,7 @@
 :root {
   --designa-primary-rgb: #29d0e9;
   --designa-secondary-rgb:#ff0066;
-  --designa-font-size: .875rem;
+  --designa-font-size: 1.3rem;
   --designa-font-color: #575758;
   --designa-letter-spacing: 0.03em;
   --designa-letter-spacing: 0.03em;
@@ -34,7 +34,7 @@ label.output {
 }
 .adx-input small, .adx-input-group small {
   display: block;
-  margin: 0 16px;
+  margin: 0 1.6rem;
   padding: 0;
   color: inherit;
 }
@@ -43,14 +43,14 @@ label.output {
   position: absolute;
   height: 34px;
   opacity: 0.8;
-  padding-left: 8px;
+  padding-left: 0.8rem;
   line-height: 40px;
   z-index: 100;
 }
 .adx-input span i, .adx-input-group span i {
-  width: 16px;
-  height: 16px;
-  font-size: 0.875rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
   margin: 9px;
   padding: 0;
@@ -74,7 +74,7 @@ label.output {
   line-height: 2.4em;
   padding: 0 1.2%;
   border: none;
-  border-radius: 3px;
+  border-radius: 0.3rem;
   outline: none;
   border-bottom: 2px solid transparent;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -93,7 +93,7 @@ label.output {
 }
 .adx-input input + span, .adx-input textarea + span, .adx-input select + span, .adx-input-group input + span, .adx-input-group textarea + span, .adx-input-group select + span {
   right: -7px;
-  top: 30px;
+  top: 3rem;
 }
 .adx-input input[type=search], .adx-input textarea[type=search], .adx-input select[type=search], .adx-input-group input[type=search], .adx-input-group textarea[type=search], .adx-input-group select[type=search] {
   -webkit-box-sizing: border-box;
@@ -116,7 +116,7 @@ label.output {
 }
 .adx-input input[type=file]:focus, .adx-input textarea[type=file]:focus, .adx-input select[type=file]:focus, .adx-input input[type=radio]:focus, .adx-input textarea[type=radio]:focus, .adx-input select[type=radio]:focus, .adx-input input[type=checkbox]:focus, .adx-input textarea[type=checkbox]:focus, .adx-input select[type=checkbox]:focus, .adx-input-group input[type=file]:focus, .adx-input-group textarea[type=file]:focus, .adx-input-group select[type=file]:focus, .adx-input-group input[type=radio]:focus, .adx-input-group textarea[type=radio]:focus, .adx-input-group select[type=radio]:focus, .adx-input-group input[type=checkbox]:focus, .adx-input-group textarea[type=checkbox]:focus, .adx-input-group select[type=checkbox]:focus {
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 0.5rem auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 .adx-input input + .rFloat, .adx-input textarea + .rFloat, .adx-input select + .rFloat, .adx-input-group input + .rFloat, .adx-input-group textarea + .rFloat, .adx-input-group select + .rFloat {
@@ -132,7 +132,7 @@ label.output {
 }
 .adx-input textarea, .adx-input-group textarea {
   line-height: 1.4em;
-  padding-top: 8px;
+  padding-top: 0.8rem;
   min-height: 100px;
 }
 @keyframes blinkBG {
@@ -148,18 +148,18 @@ label.output {
 }
 .adx-input label, .adx-input-group label {
   display: inline-block;
-  padding: 12px 16px 0 0;
+  padding: 1.2rem 1.6rem 0 0;
 }
 .adx-input.adx-label label, .adx-input-group.adx-label label {
   display: block;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
 }
 .adx-input.adx-icon i, .adx-input-group.adx-icon i {
   display: inline-block;
   vertical-align: top;
   color: inherit;
   opacity: 0.8;
-  width: 20px;
+  width: 2rem;
 }
 .adx-input.adx-button .adx-btn, .adx-input-group.adx-button .adx-btn {
   position: absolute;
@@ -168,13 +168,13 @@ label.output {
   top: 2px;
 }
 .adx-input.adx-button.adx-label .adx-btn, .adx-input-group.adx-button.adx-label .adx-btn {
-  top: 30px;
+  top: 3rem;
 }
 
 input[type=range], .adx-input select[type=range], .adx-input-group select[type=range], .adx-input textarea[type=range], .adx-input-group textarea[type=range] {
   -webkit-appearance: none;
-  margin: 16px 0;
-  margin-bottom: 18px;
+  margin: 1.6rem 0;
+  margin-bottom: 10.8rem;
 }
 
 input[type=range]:focus, .adx-input select[type=range]:focus, .adx-input-group select[type=range]:focus, .adx-input textarea[type=range]:focus, .adx-input-group textarea[type=range]:focus {
@@ -182,11 +182,11 @@ input[type=range]:focus, .adx-input select[type=range]:focus, .adx-input-group s
 }
 
 input[type=range]::-webkit-slider-runnable-track, .adx-input select[type=range]::-webkit-slider-runnable-track, .adx-input-group select[type=range]::-webkit-slider-runnable-track, .adx-input textarea[type=range]::-webkit-slider-runnable-track, .adx-input-group textarea[type=range]::-webkit-slider-runnable-track {
-  height: 3px;
+  height: 0.3rem;
   cursor: pointer;
   animate: 0.2s;
   background: #949494;
-  border-radius: 1.3px;
+  border-radius: 1 0.3rem;
 }
 input[type=range]::-webkit-slider-runnable-track:focus, .adx-input select[type=range]::-webkit-slider-runnable-track:focus, .adx-input-group select[type=range]::-webkit-slider-runnable-track:focus, .adx-input textarea[type=range]::-webkit-slider-runnable-track:focus, .adx-input-group textarea[type=range]::-webkit-slider-runnable-track:focus {
   background: #19e3b1;
@@ -200,9 +200,9 @@ input[type=range]::-webkit-slider-thumb, .adx-input select[type=range]::-webkit-
   -moz-transform: scale(0.7);
   -o-transform: scale(0.8);
   transition: scale(0.8);
-  border: 3px solid #949494;
-  height: 24px;
-  width: 24px;
+  border: 0.3rem solid #949494;
+  height: 2.4rem;
+  width: 2.4rem;
   border-radius: 50%;
   background: #ffffff;
   cursor: pointer;
@@ -228,11 +228,11 @@ input[type=range]::-webkit-slider-thumb:focus, .adx-input select[type=range]::-w
 }
 
 input[type=range]::-moz-range-track, .adx-input select[type=range]::-moz-range-track, .adx-input-group select[type=range]::-moz-range-track, .adx-input textarea[type=range]::-moz-range-track, .adx-input-group textarea[type=range]::-moz-range-track {
-  height: 3px;
+  height: 0.3rem;
   cursor: pointer;
   animate: 0.2s;
   background: #949494;
-  border-radius: 1.3px;
+  border-radius: 1 0.3rem;
 }
 input[type=range]::-moz-range-track:focus, .adx-input select[type=range]::-moz-range-track:focus, .adx-input-group select[type=range]::-moz-range-track:focus, .adx-input textarea[type=range]::-moz-range-track:focus, .adx-input-group textarea[type=range]::-moz-range-track:focus {
   background: #19e3b1;
@@ -243,9 +243,9 @@ input[type=range]::-moz-range-thumb, .adx-input select[type=range]::-moz-range-t
   -moz-transform: scale(0.7);
   -o-transform: scale(0.8);
   transition: scale(0.8);
-  border: 3px solid #949494;
-  height: 24px;
-  width: 24px;
+  border: 0.3rem solid #949494;
+  height: 2.4rem;
+  width: 2.4rem;
   border-radius: 50%;
   background: #ffffff;
   cursor: pointer;
@@ -274,11 +274,11 @@ input[type=range]::-moz-range-thumb:focus, .adx-input select[type=range]::-moz-r
 }
 
 input[type=range]::-ms-track, .adx-input select[type=range]::-ms-track, .adx-input-group select[type=range]::-ms-track, .adx-input textarea[type=range]::-ms-track, .adx-input-group textarea[type=range]::-ms-track {
-  height: 3px;
+  height: 0.3rem;
   cursor: pointer;
   animate: 0.2s;
   background: #949494;
-  border-radius: 1.3px;
+  border-radius: 1 0.3rem;
   background: transparent;
   border-color: transparent;
   border-width: 1px 0;
@@ -301,9 +301,9 @@ input[type=range]::-ms-thumb, .adx-input select[type=range]::-ms-thumb, .adx-inp
   -moz-transform: scale(0.7);
   -o-transform: scale(0.8);
   transition: scale(0.8);
-  border: 3px solid #949494;
-  height: 24px;
-  width: 24px;
+  border: 0.3rem solid #949494;
+  height: 2.4rem;
+  width: 2.4rem;
   border-radius: 50%;
   background: #ffffff;
   cursor: pointer;
@@ -335,30 +335,30 @@ input[type=range]:focus::-ms-fill-upper, .adx-input select[type=range]:focus::-m
   border-radius: 0;
 }
 .adx-input.adx-round label, .adx-input-group.adx-round label {
-  padding-left: 16px;
+  padding-left: 1.6rem;
 }
 .adx-input.adx-round input, .adx-input.adx-round select, .adx-input.adx-round textarea, .adx-input-group.adx-round input, .adx-input-group.adx-round select, .adx-input-group.adx-round textarea {
-  border-radius: 16.5px;
+  border-radius: 1.6rem;
   padding: 0 2%;
 }
 .adx-input.adx-round.outline input, .adx-input.adx-round.outline select, .adx-input.adx-round.outline textarea, .adx-input-group.adx-round.outline input, .adx-input-group.adx-round.outline select, .adx-input-group.adx-round.outline textarea {
-  border-radius: 18px;
+  border-radius: 1.8rem;
 }
 .adx-input.adx-round select, .adx-input-group.adx-round select {
   width: 100%;
 }
 .adx-input.adx-round textarea, .adx-input-group.adx-round textarea {
-  padding-top: 8px;
+  padding-top: 0.8rem;
 }
 .adx-input.adx-round label, .adx-input-group.adx-round label {
-  padding-left: 16px;
+  padding-left: 1.6rem;
 }
 .adx-input.adx-ellipse input, .adx-input.adx-ellipse select, .adx-input.adx-ellipse textarea, .adx-input-group.adx-ellipse input, .adx-input-group.adx-ellipse select, .adx-input-group.adx-ellipse textarea {
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 .adx-input.adx-sm input, .adx-input.adx-sm select, .adx-input.adx-sm textarea, .adx-input-group.adx-sm input, .adx-input-group.adx-sm select, .adx-input-group.adx-sm textarea {
   font-weight: normal;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   line-height: 2em;
 }
 .adx-input.adx-float, .adx-input-group.adx-float {
@@ -366,15 +366,15 @@ input[type=range]:focus::-ms-fill-upper, .adx-input select[type=range]:focus::-m
 }
 .adx-input.adx-float u, .adx-input-group.adx-float u {
   display: block;
-  margin: auto 16px;
-  border-width: 1.5px;
+  margin: auto 1.6rem;
+  border-width: 1 0.5rem;
   opacity: 0.5;
   position: relative;
   background-color: var(--designa-font-color);
   height: 1px;
 }
 .adx-input.adx-float input, .adx-input.adx-float select, .adx-input.adx-float textarea, .adx-input-group.adx-float input, .adx-input-group.adx-float select, .adx-input-group.adx-float textarea {
-  margin: 30px 16px 8px 16px;
+  margin: 3rem 1.6rem 0.8rem 1.6rem;
   z-index: 10 !important;
   z-index: 10;
 }
@@ -392,7 +392,7 @@ input[type=range]:focus::-ms-fill-upper, .adx-input select[type=range]:focus::-m
 }
 .adx-input.adx-float input:focus + label, .adx-input.adx-float select:focus + label, .adx-input.adx-float textarea:focus + label, .adx-input-group.adx-float input:focus + label, .adx-input-group.adx-float select:focus + label, .adx-input-group.adx-float textarea:focus + label {
   color: #108a9c;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   font-weight: normal;
   opacity: 1;
   top: 0;
@@ -433,6 +433,14 @@ input[type=range]:focus::-ms-fill-upper, .adx-input select[type=range]:focus::-m
   display: flex;
   flex-wrap: no-wrap;
   overflow-x: auto;
+  gap: 0.8rem;
+}
+.adx-input-group .adx-input {
+  margin: 0;
+  flex: 1;
+}
+.adx-input-group .adx-input input, .adx-input-group .adx-input select, .adx-input-group .adx-input textarea {
+  width: 100%;
 }
 .adx-input-group > input, .adx-input-group textarea, .adx-input-group select {
   flex: 1;
@@ -440,10 +448,10 @@ input[type=range]:focus::-ms-fill-upper, .adx-input select[type=range]:focus::-m
   border-radius: 0;
 }
 .adx-input-group > input:first-child, .adx-input-group textarea:first-child, .adx-input-group select:first-child {
-  border-radius: 3px 0 0 3px;
+  border-radius: 0.3rem 0 0 0.3rem;
 }
 .adx-input-group > input:last-child, .adx-input-group textarea:last-child, .adx-input-group select:last-child {
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 0.3rem 0.3rem 0;
 }
 
 form.adx-form.input-pink input:focus,
@@ -605,8 +613,8 @@ form.adx-form.input-clear:after,
 
 output {
   display: block;
-  padding-top: 7px;
-  font-size: 0.875rem;
+  padding-top: 0.7rem;
+  font-size: 1.4rem;
   line-height: 1.42857143;
   color: #555;
 }
@@ -614,29 +622,29 @@ output {
 .adx-toggle {
   position: relative;
   display: block;
-  height: 23px !important;
-  width: 55px;
-  margin: 16px;
+  height: 3.5rem !important;
+  width: 7rem;
+  margin: 1.6rem;
   background: rgba(28, 28, 28, 0.1);
   border-radius: 100px;
   cursor: pointer;
   transition: all 0.3s ease;
-  padding: 12px 16px 0 0;
+  padding: 12px 1.6rem 0 0;
 }
 .adx-toggle:after {
   position: absolute;
-  left: 8px;
-  top: 8px;
+  left: 0.8rem;
+  top: 0.8rem;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   background: white;
-  -webkit-box-shadow: 0 0px 3px 3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0px 3px 3px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 0px 3px 3px rgba(0, 0, 0, 0.1);
-  -mz-box-shadow: 0 0px 3px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0px 3px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0px 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0px 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0px 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+  -mz-box-shadow: 0 0px 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
   content: "";
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -652,12 +660,12 @@ output {
 .adx-toggle:before {
   position: absolute;
   left: 40px;
-  top: 8px;
+  top: 0.8rem;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   font-family: FontAwesome;
-  font-size: 1.25rem;
+  font-size: 2rem;
   transform: scale(0.8);
   text-align: center;
   color: rgba(0, 0, 0, 0.2);
@@ -705,7 +713,7 @@ input[type=checkbox]:disabled ~ .adx-toggle:after, .adx-input select[type=checkb
 [type=checkbox]:checked + .adx-checkbox {
   position: relative;
   cursor: pointer;
-  margin: 16px;
+  margin: 1.6rem;
 }
 
 /* checkbox aspect */
@@ -734,8 +742,8 @@ input[type=checkbox]:disabled ~ .adx-toggle:after, .adx-input select[type=checkb
   width: 17px;
   height: 17px;
   margin-left: 1px;
-  margin-top: 3px;
-  font-size: 0.875rem;
+  margin-top: 0.3rem;
+  font-size: 1.4rem;
   line-height: 0.8;
   color: white;
   transition: all 0.2s;
@@ -789,7 +797,7 @@ input[type=checkbox]:disabled ~ .adx-toggle:after, .adx-input select[type=checkb
 [type=radio]:checked + .adx-radio {
   position: relative;
   cursor: pointer;
-  margin: 16px;
+  margin: 1.6rem;
 }
 
 /* radio aspect */
@@ -813,12 +821,12 @@ input[type=checkbox]:disabled ~ .adx-toggle:after, .adx-input select[type=checkb
   content: "\f111";
   padding-top: 1px;
   display: inline-block;
-  margin-top: 3.3px;
-  font-size: 13px;
+  margin-top: 3 0.3rem;
+  font-size: 10.3rem;
   text-align: center;
   border-radius: 50%;
   position: absolute;
-  top: 3.35px;
+  top: 3.3 0.5rem;
   left: 2px;
   display: block;
   width: 17px;

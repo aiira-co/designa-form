@@ -1,9 +1,9 @@
 //CheckBox Design | Label
 [type='checkbox']:not(:checked)+.#{$classPrefix}-checkbox,
 [type='checkbox']:checked+.#{$classPrefix}-checkbox {
-    position: relative; //padding-left: 24px;
+    position: relative; //padding-left: 2.4rem;
     cursor: pointer;
-    margin: 16px;
+    margin: 1.6rem;
 }
 
 /* checkbox aspect */
@@ -19,7 +19,7 @@
     border-radius: 2px;
     background-color: rgba(black, 0.05);
      // border-radius: 1px;
-    // box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+    // box-shadow: inset 0 1px 0.3rem rgba(0,0,0,.3)
 }
 
 /* checked mark aspect */
@@ -35,8 +35,8 @@
     width: 17px;
     height: 17px; //  zoom:90%;
     margin-left: 1px;
-    margin-top: 3px;
-    font-size: 0.875rem;
+    margin-top: 0.3rem;
+    font-size: 1.4rem;
     line-height: 0.8;
     color: white; // background-color:$tGreen - 50;
     transition: all 0.2s;

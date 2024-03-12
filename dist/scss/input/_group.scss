@@ -4,6 +4,15 @@
     display: flex;
     flex-wrap: no-wrap;
     overflow-x: auto;
+    gap:.8rem;
+
+    .#{$classPrefix}-input{
+        margin:0;
+        flex:1;
+        input,select,textarea{
+            width: 100%;
+        }
+    }
 
     & > input, textarea, select{
         flex: 1;
@@ -11,10 +20,10 @@
         border-radius: 0;
 
         &:first-child{
-            border-radius: 3px 0 0 3px;
+            border-radius: 0.3rem 0 0 0.3rem;
         }
         &:last-child{
-            border-radius: 0 3px 3px 0;
+            border-radius: 0 0.3rem 0.3rem 0;
         }
     }
 }

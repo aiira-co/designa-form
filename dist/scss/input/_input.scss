@@ -17,7 +17,7 @@ label {
 
     small {
         display: block;
-        margin: 0 16px;
+        margin: 0 1.6rem;
         padding: 0;
         color: inherit;
     }
@@ -28,14 +28,14 @@ label {
         position: absolute;
         height: 34px;
         opacity: .8;
-        padding-left: 8px;
+        padding-left: 0.8rem;
         line-height: 40px;
         z-index: 100;
 
         i {
-            width: 16px;
-            height: 16px;
-            font-size: 0.875rem;
+            width: 1.6rem;
+            height: 1.6rem;
+            font-size: 1.4rem;
             text-align: center;
             margin: 9px;
             padding: 0;
@@ -62,7 +62,7 @@ label {
         line-height: 2.4em;
         padding: 0 1.2%;
         border: none;
-        border-radius: 3px;
+        border-radius: 0.3rem;
         outline: none;
         border-bottom: 2px solid transparent;
         -webkit-transition: all .3s ease-out 0s;
@@ -88,7 +88,7 @@ label {
         // for icons
         &+span {
             right: -7px;
-            top: 30px;
+            top: 3.0rem;
 
             i {}
 
@@ -126,7 +126,7 @@ label {
         &[type='radio']:focus,
         &[type='checkbox']:focus {
             outline: thin dotted;
-            outline: 5px auto -webkit-focus-ring-color;
+            outline: 0.5rem auto -webkit-focus-ring-color;
             outline-offset: -2px;
         }
 
@@ -150,7 +150,7 @@ label {
     textarea {
         @extend input;
         line-height: 1.4em;
-        padding-top: 8px;
+        padding-top: 0.8rem;
         min-height: 100px;
     }
 
@@ -171,13 +171,13 @@ label {
     //Label
     label {
         display: inline-block;
-        padding: 12px 16px 0 0;
+        padding: 1.2rem 1.6rem 0 0;
     }
 
     &.#{$classPrefix}-label {
         label {
             display: block;
-            font-size: 0.75rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -188,7 +188,7 @@ label {
             vertical-align: top;
             color: inherit;
             opacity: 0.8;
-            width: 20px; // background-color:red;
+            width: 2.0rem; // background-color:red;
             // background-color:green;
             // position:absolute;
         }
@@ -205,7 +205,7 @@ label {
 
         &.#{$classPrefix}-label {
             .#{$classPrefix}-btn {
-                top: 30px;
+                top: 3.0rem;
             }
         }
     }
@@ -220,8 +220,8 @@ label {
 //Range
 input[type='range'] {
     -webkit-appearance: none;
-    margin: 16px 0;
-    margin-bottom: 18px; // width: 100%;
+    margin: 1.6rem 0;
+    margin-bottom: 10.8rem; // width: 100%;
 }
 
 input[type='range']:focus {
